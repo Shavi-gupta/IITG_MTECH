@@ -1,0 +1,3 @@
+a flaw in robots designed to perform surgery has been found that lets them be easily hacked , according to researchers
+the experts were able to take control of a so - called telerobot during surgery by exploiting a simple programming trick
+â while this experiment was performed in a controlled environment and not on the operating table ( stock image pictured ) , the researchers said it is clear more stringent security measures are needed during the experiment , an operator was asked to move blocks onto different pegs ( shown ) with the robot , but when the ' hackers ' took control , the task proved difficult - or impossible the researchers note that while their test applies only to raven ii , other surgical robots that use similar teleoperation were likely also at risk

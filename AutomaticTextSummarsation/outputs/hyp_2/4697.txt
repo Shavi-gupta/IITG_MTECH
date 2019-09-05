@@ -1,0 +1,3 @@
+in their paper , the researchers explained how they asked 13 joggers to run for an average of 26 minutes with a drone - specifically a quadcopter - as a companion
+however , technology has been developed where a drone could lock onto a pattern on a runner âs shirt in order to track their speed and direction ( shown ) there were some concerns from the runners , though ; occasionally the quadcopter would deviate from its path , leading them to question their safety
+some runners may have dogs as jogging companions now , but will be using robots in the future ? the team hope their research could inspire new ways to perform such activities in a cycling scenario , the researchers say the drone could create a draft , â providing a psychological and maybe even physical boost

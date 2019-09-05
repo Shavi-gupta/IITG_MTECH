@@ -1,0 +1,3 @@
+greece researchers created the algorithm , which determines a person âs state of intoxication by looking at the temperature of their face - especially the forehead and nose
+researchers from the university of patras took thermal infrared photographs of 41 volunteers â faces , before and after drinking four glasses of wine
+the scientists then used artificial neural networks to compare the sober ( left ) and drunken images ( right ) pixel - by - pixel ( a single pixel is shown above the left eyebrow ) researchers from the university of patras took thermal infrared photographs of 41 volunteers â faces , before and after drinking four glasses of wine

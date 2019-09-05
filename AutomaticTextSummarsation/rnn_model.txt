@@ -1,0 +1,138 @@
+We can model extractive summarization as Sequence Classification problem that is visit every sentence sequentially in original document and take binary decision whether to include the sentence in the summary. The basic building block for model is gated recurrent unit (GRU) RNN.
+GRU-RNN has 2 gates:
+u: update gate
+r: reset gate
+It can be described by following equations:
+
+
+
+
+Applies a multi-layer gated recurrent unit (GRU) RNN to an input sequence
+
+RNN model:
+
+Varibales declared:-
+V: Vocabulory size
+D: Embedding Dimension
+H: Hidden state size
+S: Number of segments to consider
+P_V: position number(number of possible position vectors)
+P_D: position dimension (dimension of positon vector)
+
+
+Different embedding tables:
+1) abs_pos_embed : a table of embeddings for position vectors (pv* pd)
+2) rel_pos_embed : a table of embeddings for segment vectors (s* pd)
+3) embed : a table of embeddings for word vectors (pv* pd)
+
+
+Phase 1: To create document representaion
+
+Define the layers of model:
+1) word_RNN: Bi-directional GRU-RNN model for word level:
+	Parameters:
+	Input size: word-embedding size(D)
+	Hidden state size: H
+	Batch-first: True--->data would be passed in batches
+	Bidirectional: True
+
+2) sent_RNN: Bi-directional GRU-RNN model for sentence level:
+	Parameters:
+	Input size: 2*H
+		Avg-pooled concatenated hidden states from bi-direc wordlevel RNN 
+	Hidden state size: H
+	Batch-first: True--->data would be passed in batches
+	Bidirectional: True
+
+Phase 2: To find probablity for each sentence
+
+Parameters of Classification Layer needed while training:
+Define the linear/Bilinear transformation models:
+[Bias false in each]
+
+1) content: For information content
+	Input size: 2*H [ non-linear transformation of concated hidden states at jth time step of Bi GRU-RNN model for sentence level]
+	Output size: 1
+        Linear func: w* input 		where w is learnable
+
+2) salience: For Saliency(Importance of sentence)
+	Input: 2*H, 2*H 
+	i) Para1: non-linear transformation of concated hidden states at jth time step of Bi GRU-RNN model for sentence level [2*H]
+	ii)Para2: Document representation [2*H]
+
+	Output size: 1
+        BiLinear func: para1*w*para2  	where w is learnable
+
+3) novelty: For Novelty(Newness of sentence). It checks redundancy of sentence w.r.t current state summary
+	Input: 2*H, 2*H 
+	i) Para1: non-linear transformation of concated hidden states at jth time step of Bi GRU-RNN model for sentence level [2*H]
+	ii)Para2: tanh (Dynamic representation of Summary at jth sentence position ) [2*H]
+
+	Output size: 1
+        BiLinear func: para1*w*para2 	where w is learnable
+
+4) abs_pos: For Absolute postion Importance
+	Input size: P_D [positon vector dimension]
+	Output size: 1
+        Linear func: w* input 		where w is learnable
+
+5) rel_pos: For Relative postion Importance
+	Input size: P_D [positon vector dimension]
+	Output size: 1
+        Linear func: w* input  		where w is learnable
+
+
+
+def max_pool1d(self,x,seq_lens):
+        # x:[N,L,O_in]
+        out = []
+        for index,t in enumerate(x):
+            t = t[:seq_lens[index],:]
+            t = torch.t(t).unsqueeze(0)
+            out.append(F.max_pool1d(t,t.size(2)))
+        
+        out = torch.cat(out).squeeze(2)
+        return out
+
+def avg_pool1d(self,x,seq_lens):
+        # x:[N,L,O_in]
+        out = []
+        for index,t in enumerate(x):
+            t = t[:seq_lens[index],:]
+            t = torch.t(t).unsqueeze(0)
+            out.append(F.avg_pool1d(t,t.size(2)))
+        
+        out = torch.cat(out).squeeze(2)
+        return out
+
+
+foward( x, doc_lens): 
+"""
+        In the forward function we accept a Variable of input data and we must 
+        return a Variable of output data. We can use Modules defined in the 
+        constructor as well as arbitrary operators on Variables.
+
+	Input: x:- doc--->sequence of sentences
+	Output: probs---->prob assoc with each sentence
+"""
+	sent_lens: no. of sentences
+	1)	x= data in terms of word embeddings
+	2)	x= output of word_rnn(x)
+	3)	word_out= max_pool(x,sent_lens)
+	4)	sent_out = self.sent_RNN(x)
+	5)	docs = self.max_pool1d(sent_out,doc_lens) #document representation
+	6)	doc= tanh(doc) #non-linear representation of doc     
+	7)	s= summary repre w.r.t current pos
+	8)	calc prob for each sent and append to probs                               
+
+Return probs
+
+
+
+
+
+
+
+
+
+

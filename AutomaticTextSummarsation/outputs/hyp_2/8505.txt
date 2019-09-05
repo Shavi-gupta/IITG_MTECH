@@ -1,0 +1,3 @@
+google has developed a system to allow robots to download new personalities online
+' google 's patent details a cloud - based system where a personality could be downloaded to a robot , in the same way one might download an app. ' the robot personality may also be modifiable within a base personality construct ( i.e. , a default - persona ) to provide states or moods representing transitory conditions of happiness , fear , surprise , perplexion ( e.g. , the woody allen robot ) , thoughtfulness , derision ( e.g. , the rodney dangerfield robot ) , and so forth , ' states the patent
+google 's patent drawings reveal the system can share personalities and download them darpa expects at least twenty teams to compete in the drc finals

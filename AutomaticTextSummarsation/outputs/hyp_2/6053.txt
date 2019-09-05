@@ -1,0 +1,3 @@
+researchers from london and edinburgh are developing a computer that can collate meteorological information and then produce forecasts as if they were written by a human
+if the project is successful , a prototype system will be tested by generating local weather reports on the bbc 's website
+if the project is successful a prototype system will be tested by generating local weather reports on the mailonline 's website ( shown ) , which currently features just 10 reports for large areas of the country nlg is the process of producing readable texts in english , or other languages , automatically on a computer

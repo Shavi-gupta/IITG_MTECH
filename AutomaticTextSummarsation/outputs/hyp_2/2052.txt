@@ -1,0 +1,3 @@
+estimates suggest around 1,000 ios apps are vulnerable to a flaw in connectivity software from afnetworking
+search for apps below estimates from security researchers suggest around 1,000 ios apps are vulnerable to a flaw in connectivity software from afnetworking
+the uber app is shown left and its vulnerability report , taken from sourcedna 's online tool is shown right the security researchers are asking readers to highlight any apps still at risk in the comments on its blog post

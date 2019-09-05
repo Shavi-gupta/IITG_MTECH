@@ -1,0 +1,3 @@
+a programmer has created these stunning graphs to reveal the dominant colour of artworks through history they show orange has always been the most popular colour - although in recent years blue has begun to catch up
+the software extracts the relevant colour information from images or artworks found online
+to do this , he wrote software first to scrape the images of the paintings from sites where they were available for free download - bbc , google art project , wikiart , wikimedia commons , and various museums

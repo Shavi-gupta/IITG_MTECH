@@ -1,0 +1,3 @@
+and it has built an algorithm that can recognise a potential troll with an accuracy of 80 per cent by scanning their comments
+experts studied 40 million posts by 1.7 millions users on news site cnn , political news site breitbart.com and gaming site ign
+the researchers then divided users into those most likely to be banned , called future-banned users ( fbus ) , and other users dubbed never - banned users ( nbus ) the research was carried out by phd students from stanford and cornell university , led by justin chang , in a paper called antisocial behavior in online discussion communities

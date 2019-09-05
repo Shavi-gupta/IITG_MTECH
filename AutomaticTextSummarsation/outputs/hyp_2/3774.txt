@@ -1,0 +1,3 @@
+but you could soon use a selfie to gain access to your apps and messages thanks to apple 's latest patent
+the filing details a system of scanning a user 's face with the front - facing camera when the handset is moved into a certain position , and automatically unlocking the device if the image matches one on file
+apple 's patent details a method for automatically unlocking a mobile device using a system comprising of ' capturing an initial image while the device is locked , monitoring a motion state of the mobile device to determine whether the device is moving or is motionless ; analysing the images to detect a user 's face and unlocking the device

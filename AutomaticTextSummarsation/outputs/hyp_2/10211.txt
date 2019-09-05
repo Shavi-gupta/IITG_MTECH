@@ -1,0 +1,3 @@
+security researchers have discovered a way to intercept a person 's fingerprints on a samsung galaxy s5 running android 4.4 and older fingerprint scanners are often touted as the future of security and an alternative to the notoriously flawed password
+but experts have discovered they may not be as secure as first thought after a number of android devices , including samsung 's samsung galaxy s5 , were said to be potentially ' leaking ' fingerprints
+the security researchers have found a way to intercept a person 's biometric data after it is captured by a built - in scanner , but before it becomes encrypted

@@ -1,0 +1,3 @@
+the site has today rolled out a new feature dubbed ' highlights ' , aimed at helping users sift through the large number of tweets on their feed each day
+the service provides a twice - daily summary ' of the best tweets for you , delivered via rich push notification , ' twitter 's luk said in a blog post
+highlights is limited to english - language readers with the twitter app installed on an android device
