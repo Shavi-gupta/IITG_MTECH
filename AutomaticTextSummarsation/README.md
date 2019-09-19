@@ -43,14 +43,6 @@ python main.py -device 0 -batch_size 1 -test -load_dir checkpoints/XXX.pt
 |RNN-RNN|26.0|11.5|13.8|
 |CNN-RNN|25.8|11.3|13.8|
 
-### Download Data:  
-
-+ 百度云:[https://pan.baidu.com/s/1LV3iuuH1NjxuAJd0iz14lA](https://pan.baidu.com/s/1LV3iuuH1NjxuAJd0iz14lA) 密码:`ivzl`
-
-+ Google Driver:[data.tar.gz](https://drive.google.com/file/d/1JgsboIAs__r6XfCbkDWgmberXJw8FBWE/view?usp=sharing)
-
-+ Source Data:[Neural Summarization by Extracting Sentences and Words](https://docs.google.com/uc?id=0B0Obe9L1qtsnSXZEd0JCenIyejg&export=download)
-
 ### Evaluation
 
 + [Tools](https://github.com/hpzhao/nlp-metrics)
