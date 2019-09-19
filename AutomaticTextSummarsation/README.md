@@ -1,11 +1,3 @@
-## The PyTorch Implementation Of SummaRuNNer
-
-[![License](https://img.shields.io/badge/license-MIT-000000.svg)](https://opensource.org/licenses/MIT)
-
-### Statement
-
-+ **Not the official implementation! Just For Learning and communication!**
-
 ### Models
 
 1. RNN_RNN
@@ -16,11 +8,6 @@
 2. CNN_RNN
 <div  align="center">
 <img src="images/CNN_RNN.png" width = "350" height = "260" align=center />
-</div>
-
-3. Hierarchical Attention Networks
-<div  align="center">
-<img src="images/Hiarchical_Attn.png" width = "350" height = "350" align=center />
 </div>
 
 ### Setup
@@ -45,7 +32,6 @@ python main.py -device 0 -batch_size 1 -test -load_dir checkpoints/XXX.pt
 
 1. RNN_RNN(`checkpoints/RNN_RNN_seed_1.pt`)
 2. CNN_RNN(`checkpoints/CNN_RNN_seed_1.pt`)
-2. AttnRNN(`checkpoints/AttnRNN_seed_1.pt`)
 
 ## Result
 
@@ -56,11 +42,6 @@ python main.py -device 0 -batch_size 1 -test -load_dir checkpoints/XXX.pt
 |SummaRNNer(Nallapati)|26.2|10.8|14.4|
 |RNN-RNN|26.0|11.5|13.8|
 |CNN-RNN|25.8|11.3|13.8|
-|Hierarchical Attn Net|26.0|11.4|13.8|
-
-### Blog
-
-+ [用PyTorch搭建抽取式摘要系统](http://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q)
 
 ### Download Data:  
 
@@ -73,7 +54,3 @@ python main.py -device 0 -batch_size 1 -test -load_dir checkpoints/XXX.pt
 ### Evaluation
 
 + [Tools](https://github.com/hpzhao/nlp-metrics)
-
-### Acknowledge
-
-+ Thanks for @[AlJohri](https://github.com/AlJohri)'s contribution
