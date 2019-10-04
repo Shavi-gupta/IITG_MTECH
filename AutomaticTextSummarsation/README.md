@@ -32,17 +32,3 @@ python main.py -device 0 -batch_size 1 -test -load_dir checkpoints/XXX.pt
 
 1. RNN_RNN(`checkpoints/RNN_RNN_seed_1.pt`)
 2. CNN_RNN(`checkpoints/CNN_RNN_seed_1.pt`)
-
-## Result
-
-#### DailyMail(75 bytes)  
-
-| model  | ROUGE-1   | ROUGE-2 | ROUGE-L |
-| ------ | :-----:   | :----:  | :----:  |
-|SummaRNNer(Nallapati)|26.2|10.8|14.4|
-|RNN-RNN|26.0|11.5|13.8|
-|CNN-RNN|25.8|11.3|13.8|
-
-### Evaluation
-
-+ [Tools](https://github.com/hpzhao/nlp-metrics)
